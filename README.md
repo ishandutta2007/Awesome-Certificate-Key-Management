@@ -52,33 +52,19 @@
 
 
 
-### 📌 Overview & SEO Summary
+### 📌 Overview & SEO Summary 🔍
 
-Welcome to the ultimate curated directory of **certificate and key management platforms**, **open-source PKI frameworks**, and **ACME automation tools**. Whether you are looking for enterprise-grade commercial solutions (such as *Venafi*, *Keyfactor*, and *DigiCert*), or self-hostable open-source alternatives (like *EJBCA*, *OpenXPKI*, and *Certimate*), this list covers category leaders, certificate lifecycle automation, and privacy-respecting PKI infrastructure.
+Welcome to the definitive curated directory of **Certificate Lifecycle Management (CLM)**, **Machine Identity Management (MIM)**, **Public Key Infrastructure (PKI)** frameworks, and **ACME automated certificate issuance tools**. 
 
+Whether you are evaluating enterprise-grade commercial platforms (*Azure Key Vault*, *AWS Certificate Manager*, *Venafi*, *Keyfactor*, *DigiCert*, *CyberArk*) or exploring battle-tested self-hosted open-source software (*mkcert*, *acme.sh*, *Certbot*, *cert-manager*, *Infisical*, *CFSSL*, *Certimate*, *Smallstep CA*, *OpenBao*, *EJBCA*), this directory offers complete coverage of cryptographic key governance, automated TLS/SSL certificate lifecycle renewal, non-human identity security, and post-quantum cryptography (PQC) readiness. 🛡️
 
-
-**Key Market Context:**
-
-- **HashiCorp Vault’s PKI engine, cert-manager for Kubernetes, and Keyfactor’s open-source EJBCA are the common free routes for CLM** — they remove licensing cost but carry operational overhead and generally do less on enterprise-wide discovery and governance than commercial platforms .
-
-- **OpenBao** is currently one of the most widely discussed open-source alternatives to HashiCorp Vault, created as a community-led fork designed for enterprise secrets management while preserving an OSI-approved open source approach .
-
-- **EJBCA** is the leading open-source PKI and certificate authority software, with **953 GitHub stars**, supporting certificate enrollment, key archival, OCSP, and smartcard management .
-
-- **OpenXPKI** is the leading open-source enterprise-scale PKI software, with **694 GitHub stars**, providing certificate lifecycle management for enterprise-grade deployments .
-
-- **Dogtag Certificate System** is an enterprise-class Certificate Authority supporting all aspects of certificate lifecycle management, including key archival, OCSP, and smartcard management, with **509 GitHub stars** .
-
-- **CFSSL** is Cloudflare's PKI and TLS toolkit, with **9,475 GitHub stars**, providing certificate authority and signing capabilities .
-
-- **Lemur** by Netflix is an open-source certificate manager, with **1,771 GitHub stars**, for certificate lifecycle management .
-
-- **Certimate** is the leading open-source self-hosted SSL certificate ACME tool, automating the full-cycle of issuance, deployment, renewal, and monitoring with support for **70+ domain registrars** and **160+ deployment destinations** .
-
-- **Smallstep CA** is a private certificate authority with **8,892 GitHub stars**, providing X.509 and SSH certificate management with ACME server support .
-
-- **ILM (Identity Lifecycle Management)** is an open-source platform providing certificate management, cryptographic key management, secrets management through Vault Profile, and CBOM scanning .
+**🔑 Key Market Highlights & Insights:**
+- ☸️ **cert-manager for Kubernetes (14,100+ stars)** and **acme.sh (47,800+ stars)** lead cloud-native and Linux TLS automation, eliminating manual certificate expiry outages via automated ACME protocols.
+- 💻 **mkcert (59,700+ stars)** remains the benchmark tool for zero-config, locally trusted HTTPS development across developer environments.
+- 🔐 **Vault PKI Engines & Open-Source Secrets Management**: **HashiCorp Vault**, community fork **OpenBao (8,380+ stars)**, and developer-first **Infisical (29,600+ stars)** provide identity-based dynamic secrets and short-lived TLS/mTLS certificate generation.
+- 🏢 **Enterprise PKI & Private CAs**: Keyfactor’s **EJBCA (960+ stars)**, **OpenXPKI (700 stars)**, and Red Hat upstream **Dogtag (510 stars)** offer sovereign, compliance-driven X.509 issuance, OCSP responders, and hardware security module (HSM) key archival.
+- 🚀 **Self-Hosted Visual ACME Automation**: **Certimate (9,360+ stars)** automates visual certificate deployment to 70+ DNS providers and 160+ target destinations with minimal memory footprint.
+- ⚛️ **Post-Quantum Cryptography (PQC)**: Modern PKIs such as **XiPKI (600+ stars)** integrate NIST-standardized quantum-resilient algorithms (ML-DSA / Dilithium) to future-proof digital certificate chains.
 
 
 
@@ -86,18 +72,13 @@ Welcome to the ultimate curated directory of **certificate and key management pl
 
 
 
-## 📑 Table of Contents
+## 📑 Table of Contents 📋
 
 - [🏢 SaaS & Commercial Platforms](#-saas--commercial-platforms)
-
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects-)
 - [🛠️ How to Contribute](#%EF%B8%8F-how-to-contribute)
-
-- [📊 Star History](#-star-history)
-
-- [🤝 Support & Sponsorship](#-support--sponsorship)
-
+- [🤝 Support & Sponsorship](#-support--sponsorship-)
+- [📊 Star History](#-star-history-)
 - [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
 
@@ -129,125 +110,75 @@ Welcome to the ultimate curated directory of **certificate and key management pl
 
 
 
-## 🔓 Open-Source GitHub Projects
+## 🔓 Open-Source GitHub Projects 🌟
 
+*Curated community solutions sorted by GitHub Stars Count (Descending)* 📊
 
+- **[mkcert](https://github.com/FiloSottile/mkcert)** [![Stars](https://img.shields.io/github/stars/FiloSottile/mkcert?style=social&color=white)](https://github.com/FiloSottile/mkcert/stargazers)  
+  **Zero-config tool for making locally-trusted development certificates**, Go-based. **59,700+ GitHub stars** — **the gold standard for local HTTPS development** . Automatically creates and installs a local CA in the system root store and browser trust stores . Supports any local domain including `localhost` and `*.development.local` without warnings . 🔒
 
-*Sorted by GitHub_Stars_Count (Descending)* 🌟
+- **[acme.sh](https://github.com/acmesh-official/acme.sh)** [![Stars](https://img.shields.io/github/stars/acmesh-official/acme.sh?style=social&color=white)](https://github.com/acmesh-official/acme.sh/stargazers)  
+  **Pure Unix shell ACME client**, zero dependencies, GPL-3.0 licensed. **47,800+ GitHub stars** — **the most portable and versatile ACME script** . Supports full ACME v1 and ACME v2 protocols (Let's Encrypt, ZeroSSL, Buypass) . Integrates natively with over **150+ DNS API providers** for automated DNS-01 verification, wildcard issuance, and automatic cron-based certificate renewals . ⚡
 
-
-
-- **[CFSSL](https://github.com/cloudflare/cfssl)** [![Stars](https://img.shields.io/github/stars/cloudflare/cfssl?style=social&color=white)](https://github.com/cloudflare/cfssl/stargazers)  
-
-  **Cloudflare's PKI and TLS toolkit**, BSD-2-Clause licensed. **9,475 GitHub stars** — **the most widely deployed open-source PKI toolkit** . **Certificate authority and signing capabilities** . **Used for internal PKI, TLS certificate issuance, and certificate chain building** . **The definitive open-source PKI toolkit**  . 🔧
-
-
-
-- **[Smallstep CA](https://github.com/smallstep/certificates)** [![Stars](https://img.shields.io/github/stars/smallstep/certificates?style=social&color=white)](https://github.com/smallstep/certificates/stargazers)  
-
-  **Private certificate authority for X.509 & SSH with ACME server**, Apache-2.0 licensed. **8,892 GitHub stars** — **the leading modern open-source private CA** . **ACME server for automated certificate management** . **X.509 and SSH certificate issuance** . **Supports TLS everywhere with automated certificate lifecycle**  . 🔐
-
-
-
-- **[Bouncy Castle Java](https://github.com/bcgit/bc-java)** [![Stars](https://img.shields.io/github/stars/bcgit/bc-java?style=social&color=white)](https://github.com/bcgit/bc-java/stargazers)  
-
-  **Java cryptography and PKI library**, MIT licensed. **2,693 GitHub stars** — **the foundational Java cryptography library** . **X.509 certificate generation, parsing, and validation** . **CMS, PKCS, and OpenPGP support** . **Used by EJBCA, OpenXPKI, and most Java PKI implementations**  . ☕
-
-
-
-- **[OpenSC](https://github.com/OpenSC/OpenSC)** [![Stars](https://img.shields.io/github/stars/OpenSC/OpenSC?style=social&color=white)](https://github.com/OpenSC/OpenSC/stargazers)  
-
-  **Open-source smart card tools and middleware**, LGPL-2.1 licensed. **3,093 GitHub stars** — **PKCS#11 and MiniDriver support** . **Smart card and HSM integration** . **Used for certificate storage and cryptographic operations**  . 🪪
-
-
-
-- **[XCA](https://github.com/chris2511/xca)** [![Stars](https://img.shields.io/github/stars/chris2511/xca?style=social&color=white)](https://github.com/chris2511/xca/stargazers)  
-
-  **X Certificate and Key management**, BSD-3-Clause licensed. **2,014 GitHub stars** — **GUI for certificate and key management** . **X.509 certificate creation, signing, and revocation** . **PKCS#12, PKCS#8, and SSH key support** . **Best for individual certificate management**  . 🗝️
-
-
-
-- **[Netflix Lemur](https://github.com/Netflix/lemur)** [![Stars](https://img.shields.io/github/stars/Netflix/lemur?style=social&color=white)](https://github.com/Netflix/lemur/stargazers)  
-
-  **Certificate management and orchestration**, Apache-2.0 licensed. **1,771 GitHub stars** — **Netflix's open-source certificate manager** . **Certificate issuance, renewal, and deployment automation** . **CA integration and certificate discovery**  . 🎬
-
-
-
-- **[SoftHSMv2](https://github.com/softhsm/SoftHSMv2)** [![Stars](https://img.shields.io/github/stars/softhsm/SoftHSMv2?style=social&color=white)](https://github.com/softhsm/SoftHSMv2/stargazers)  
-
-  **Software implementation of a generic cryptographic device with a PKCS#11 interface**, BSD-2-Clause licensed. **1,096 GitHub stars** — **the reference open-source SoftHSM** . **Designed for testing and development** . **Supports PKCS#11 v2.40** . **The foundation for HSM testing**  . 🏛️
-
-
-
-- **[FreeIPA](https://github.com/freeipa/freeipa)** [![Stars](https://img.shields.io/github/stars/freeipa/freeipa?style=social&color=white)](https://github.com/freeipa/freeipa/stargazers)  
-
-  **Integrated identity and authentication solution for Linux/UNIX networks**, GPL-3.0 licensed. **1,281 GitHub stars** — **combines LDAP, Kerberos, DNS, NTP, and certificate services** . **Certificate authority integrated with identity management** . **The most complete open-source identity and PKI solution for Linux environments**  . 🐧
-
-
-
-- **[EJBCA Community Edition](https://github.com/Keyfactor/ejbca-ce)** [![Stars](https://img.shields.io/github/stars/Keyfactor/ejbca-ce?style=social&color=white)](https://github.com/Keyfactor/ejbca-ce/stargazers)  
-
-  **Open-source public key infrastructure (PKI) and certificate authority (CA) software**, LGPL-2.1 licensed. **953 GitHub stars** — **the leading open-source enterprise PKI** . **Certificate enrollment, key archival, OCSP responder, and smartcard management** . **Supports ACME, CMP, EST, SCEP protocols** . **The definitive open-source CA for enterprise deployments**  . 🏢
-
-
-
-- **[OpenXPKI](https://github.com/openxpki/openxpki)** [![Stars](https://img.shields.io/github/stars/openxpki/openxpki?style=social&color=white)](https://github.com/openxpki/openxpki/stargazers)  
-
-  **Open-source enterprise-scale PKI software**, Apache-2.0 licensed. **694 GitHub stars** — **comprehensive certificate lifecycle management** . **Workflow engine for customizable PKI processes** . **Hardware Security Module (HSM) support** . **Web, REST, SOAP, and SCEP interfaces** . **The most flexible open-source PKI workflow engine**  . 🔄
-
-
-
-- **[XiPKI](https://github.com/xipki/xipki)** [![Stars](https://img.shields.io/github/stars/xipki/xipki?style=social&color=white)](https://github.com/xipki/xipki/stargazers)  
-
-  **Compact open source PKI (CA, OCSP responder)**, Apache-2.0 licensed. **605 GitHub stars** — **full support of PQC ML-DSA (Dilithium)** . **Supports ACME, CMP, EST, SCEP protocols** . **The most modern open-source PKI with post-quantum cryptography support**  . ⚛️
-
-
-
-- **[Dogtag Certificate System](https://github.com/dogtagpki/pki)** [![Stars](https://img.shields.io/github/stars/dogtagpki/pki?style=social&color=white)](https://github.com/dogtagpki/pki/stargazers)  
-
-  **Enterprise-class Certificate Authority**, GPL-2.0 licensed. **509 GitHub stars** — **supports all aspects of certificate lifecycle management** . **Key archival, OCSP, and smartcard management** . **The upstream for Red Hat Certificate System** . **Java-based with comprehensive CLI and GUI**  . 🏛️
-
-
-
-- **[ILM (Identity Lifecycle Management)](https://github.com/OmniTrustILM/ilm)** [![Stars](https://img.shields.io/github/stars/OmniTrustILM/ilm?style=social&color=white)](https://github.com/OmniTrustILM/ilm/stargazers)  
-
-  **Open, transparent, flexible, modern platform for identity lifecycle management**, Apache-2.0 licensed. **Certificate management (issuing, revocation, renewal) through RA Profile and standard protocols** . **Cryptographic key management through Token Profile** . **Secrets management (passwords, API keys, JWT tokens, keystores) through Vault Profile with versioning, cross-vault synchronization, and approval workflows** . **Cryptographic Bill of Materials (CBOM) scanning and repository** . **Extensible connectors for CAs, credentials, discovery engines, and cryptography** . **The most complete open-source PKI and secrets lifecycle platform**  . 🏗️
-
-
-
-- **[Certimate](https://github.com/certimate-go/certimate)** [![Stars](https://img.shields.io/github/stars/certimate-go/certimate?style=social&color=white)](https://github.com/certimate-go/certimate/stargazers)  
-
-  **Open-source self-hosted SSL certificate ACME tool**, MIT licensed. **Automates the full-cycle of issuance, deployment, renewal, and monitoring visually** . **Supports 70+ domain registrars** (AWS, Cloudflare, GoDaddy, Alibaba Cloud, Tencent Cloud) . **160+ deployment destinations** (Kubernetes, CDN, WAF, load balancers) . **Multiple ACME CAs: Let's Encrypt, Actalis, Google Trust Services, SSL.com, ZeroSSL** . **Supports RSA/ECC keys, DNS-01 and HTTP-01 challenges, PEM/PFX/JKS formats** . **~20 MB memory footprint, zero dependencies** . **The most complete open-source ACME automation tool**  . 🚀
-
-
-
-- **[OpenBao](https://github.com/openbao/openbao)** [![Stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white)](https://github.com/openbao/openbao/stargazers)  
-
-  **Open-source, community-driven fork of Vault managed by the Linux Foundation’s OpenSSF**, MPL-2.0 licensed. **95% vitality score on the EU OSS Catalogue** . **Secure secret storage with encryption at rest** . **Dynamic secrets for databases and Kubernetes**  . **PKI engine for certificate issuance** . **Tree-based revocation and leasing** . **The community-governed successor to HashiCorp Vault**  . 🏛️
-
-
+- **[Certbot](https://github.com/certbot/certbot)** [![Stars](https://img.shields.io/github/stars/certbot/certbot?style=social&color=white)](https://github.com/certbot/certbot/stargazers)  
+  **EFF's automated tool for obtaining and deploying Let's Encrypt certificates**, Apache-2.0 licensed. **33,200+ GitHub stars** — **the foundational open-source ACME client for web servers** . Provides automated plugins for Apache, Nginx, and standalone setups . Seamless automated renewal via systemd timers and cron . 🌐
 
 - **[Infisical](https://github.com/Infisical/infisical)** [![Stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white)](https://github.com/Infisical/infisical/stargazers)  
+  **Developer-friendly secrets management platform**, MIT licensed (core). **29,600+ GitHub stars** — **the leading open-source secret & PKI synchronization suite** . Self-hosted or Infisical Cloud . Secret synchronization across applications, teams, and environments . GitHub Actions, GitLab CI, Jenkins, AWS, GCP, Azure, and Kubernetes integrations . SOC 2 Type II certified . 🌿
 
-  **Developer-friendly secrets management platform**, MIT licensed (core). **Self-hosted or Infisical Cloud** . **Secret synchronization across applications, teams, and environments** . **GitHub Actions, GitLab CI, Jenkins, AWS, GCP, Azure, and Kubernetes integrations**  . **SOC 2 Type II certified** . **The most developer-friendly open-source secrets platform**  . 🌿
+- **[cert-manager](https://github.com/cert-manager/cert-manager)** [![Stars](https://img.shields.io/github/stars/cert-manager/cert-manager?style=social&color=white)](https://github.com/cert-manager/cert-manager/stargazers)  
+  **Cloud-native certificate management for Kubernetes and OpenShift**, Apache-2.0 licensed. **14,100+ GitHub stars** — **the definitive Kubernetes CLM controller** . Automates issuance and renewal of TLS certificates from a variety of sources: Let's Encrypt (ACME), HashiCorp Vault, Venafi, and private in-cluster CAs . Ensures certificates are valid and up to date across all pods and ingress controllers . ☸️
 
+- **[CFSSL](https://github.com/cloudflare/cfssl)** [![Stars](https://img.shields.io/github/stars/cloudflare/cfssl?style=social&color=white)](https://github.com/cloudflare/cfssl/stargazers)  
+  **Cloudflare's PKI and TLS toolkit**, BSD-2-Clause licensed. **9,480+ GitHub stars** — **the most widely deployed open-source PKI toolkit** . Certificate authority and signing capabilities . Used for internal PKI, TLS certificate issuance, bundle creation, and certificate chain verification . 🔧
 
+- **[Certimate](https://github.com/certimate-go/certimate)** [![Stars](https://img.shields.io/github/stars/certimate-go/certimate?style=social&color=white)](https://github.com/certimate-go/certimate/stargazers)  
+  **Open-source self-hosted SSL certificate ACME management tool**, MIT licensed. **9,360+ GitHub stars** — **automates the full lifecycle of issuance, deployment, renewal, and monitoring visually** . Supports **70+ domain registrars** (AWS Route 53, Cloudflare, GoDaddy, Alibaba Cloud, Tencent Cloud) and **160+ deployment destinations** (Kubernetes, CDN, WAF, load balancers) . Multiple ACME CAs: Let's Encrypt, ZeroSSL, Google Trust Services . Ultra-lightweight ~20 MB memory footprint . 🚀
+
+- **[Smallstep CA](https://github.com/smallstep/certificates)** [![Stars](https://img.shields.io/github/stars/smallstep/certificates?style=social&color=white)](https://github.com/smallstep/certificates/stargazers)  
+  **Private certificate authority for X.509 & SSH with ACME server**, Apache-2.0 licensed. **8,940+ GitHub stars** — **the leading modern open-source private CA** . ACME server for automated certificate management . X.509 and SSH certificate issuance . Supports TLS everywhere with automated certificate lifecycle and zero-trust mesh networking . 🔐
+
+- **[OpenBao](https://github.com/openbao/openbao)** [![Stars](https://img.shields.io/github/stars/openbao/openbao?style=social&color=white)](https://github.com/openbao/openbao/stargazers)  
+  **Open-source, community-driven fork of Vault managed by the Linux Foundation’s OpenSSF**, MPL-2.0 licensed. **8,380+ GitHub stars** — **95% vitality score on the EU OSS Catalogue** . Secure secret storage with encryption at rest, dynamic secrets for databases and Kubernetes, and built-in PKI engine for automated certificate issuance . 🏛️
+
+- **[OpenSC](https://github.com/OpenSC/OpenSC)** [![Stars](https://img.shields.io/github/stars/OpenSC/OpenSC?style=social&color=white)](https://github.com/OpenSC/OpenSC/stargazers)  
+  **Open-source smart card tools and middleware**, LGPL-2.1 licensed. **3,100+ GitHub stars** — **PKCS#11 and MiniDriver support** . Smart card and HSM hardware security module integration . Used for cryptographic certificate storage, signing, and physical token operations . 🪪
+
+- **[Bouncy Castle Java](https://github.com/bcgit/bc-java)** [![Stars](https://img.shields.io/github/stars/bcgit/bc-java?style=social&color=white)](https://github.com/bcgit/bc-java/stargazers)  
+  **Java cryptography and PKI library**, MIT licensed. **2,690+ GitHub stars** — **the foundational Java cryptography library** . X.509 certificate generation, parsing, and validation . CMS, PKCS, and OpenPGP support . The cryptographic engine powering EJBCA, OpenXPKI, and enterprise Java PKI . ☕
+
+- **[XCA](https://github.com/chris2511/xca)** [![Stars](https://img.shields.io/github/stars/chris2511/xca?style=social&color=white)](https://github.com/chris2511/xca/stargazers)  
+  **X Certificate and Key Management GUI**, BSD-3-Clause licensed. **2,020+ GitHub stars** — **intuitive desktop GUI for certificate and key management** . X.509 certificate creation, signing, template handling, and revocation . PKCS#12, PKCS#8, and SSH key management . 🗝️
+
+- **[Netflix Lemur](https://github.com/Netflix/lemur)** [![Stars](https://img.shields.io/github/stars/Netflix/lemur?style=social&color=white)](https://github.com/Netflix/lemur/stargazers)  
+  **Certificate management and orchestration**, Apache-2.0 licensed. **1,770+ GitHub stars** — **Netflix's open-source certificate manager** . Certificate issuance, renewal, and deployment automation . Integrates with multiple CAs and cloud endpoints for centralized discovery and tracking . 🎬
+
+- **[FreeIPA](https://github.com/freeipa/freeipa)** [![Stars](https://img.shields.io/github/stars/freeipa/freeipa?style=social&color=white)](https://github.com/freeipa/freeipa/stargazers)  
+  **Integrated identity and authentication solution for Linux/UNIX networks**, GPL-3.0 licensed. **1,290+ GitHub stars** — **combines LDAP, Kerberos, DNS, NTP, and certificate services** . Integrated Certificate Authority built on Dogtag PKI for centralized domain security and host certificates . 🐧
+
+- **[SoftHSMv2](https://github.com/softhsm/SoftHSMv2)** [![Stars](https://img.shields.io/github/stars/softhsm/SoftHSMv2?style=social&color=white)](https://github.com/softhsm/SoftHSMv2/stargazers)  
+  **Software implementation of a generic cryptographic device with a PKCS#11 interface**, BSD-2-Clause licensed. **1,100+ GitHub stars** — **the reference open-source SoftHSM** . Designed for testing and development of PKCS#11 v2.40 applications, cryptographic keys, and HSM integrations . 🏛️
+
+- **[EJBCA Community Edition](https://github.com/Keyfactor/ejbca-ce)** [![Stars](https://img.shields.io/github/stars/Keyfactor/ejbca-ce?style=social&color=white)](https://github.com/Keyfactor/ejbca-ce/stargazers)  
+  **Open-source public key infrastructure (PKI) and certificate authority (CA) software**, LGPL-2.1 licensed. **960+ GitHub stars** — **the leading open-source enterprise PKI** . Certificate enrollment, key archival, OCSP responder, and smartcard management . Supports ACME, CMP, EST, and SCEP protocols . 🏢
 
 - **[CyberArk Conjur Open Source](https://github.com/cyberark/conjur)** [![Stars](https://img.shields.io/github/stars/cyberark/conjur?style=social&color=white)](https://github.com/cyberark/conjur/stargazers)  
+  **Secrets management for machine identities and DevOps workflows**, Apache-2.0 licensed. **950+ GitHub stars** — **secures application credentials, tokens, and machine identities** . External Secrets Operator and Secrets Provider for Kubernetes integrations . 🔐
 
-  **Secrets management for machine identities and DevOps workflows**, Apache-2.0 licensed. **Secures application credentials and machine identities**  . **Secrets Provider for Kubernetes** and **External Secrets Operator**  . **Best for organizations already invested in CyberArk PAM**  . 🔐
+- **[OpenXPKI](https://github.com/openxpki/openxpki)** [![Stars](https://img.shields.io/github/stars/openxpki/openxpki?style=social&color=white)](https://github.com/openxpki/openxpki/stargazers)  
+  **Open-source enterprise-scale PKI software**, Apache-2.0 licensed. **700 GitHub stars** — **comprehensive certificate lifecycle management** . Workflow engine for customizable PKI processes . Hardware Security Module (HSM) support . Web, REST, SOAP, and SCEP interfaces . 🔄
 
+- **[XiPKI](https://github.com/xipki/xipki)** [![Stars](https://img.shields.io/github/stars/xipki/xipki?style=social&color=white)](https://github.com/xipki/xipki/stargazers)  
+  **Compact open source PKI (CA, OCSP responder)**, Apache-2.0 licensed. **600+ GitHub stars** — **full support of Post-Quantum Cryptography (PQC ML-DSA / Dilithium)** . Supports ACME, CMP, EST, and SCEP protocols . ⚛️
 
-
-- **[ManUp](https://github.com/procoder588/manup)** [![Stars](https://img.shields.io/github/stars/procoder588/manup?style=social&color=white)](https://github.com/procoder588/manup/stargazers)  
-
-  **Open-source, self-hosted Secrets Management platform**, open-source. **Centralized secrets vault with encrypted storage** . **Granular RBAC (Owner, Admin, Viewer)** . **Project-scoped and fine-grained API keys** . **Direct Query API and .env export** for CI/CD pipelines . **Lightweight, developer-friendly alternative to Infisical and HashiCorp Vault** . **Docker and Docker Compose deployment with embedded PostgreSQL (PGLITE)** . **Official CLI tool (manup-cli)** for seamless secret injection**  . 🔒
-
-
+- **[Dogtag Certificate System](https://github.com/dogtagpki/pki)** [![Stars](https://img.shields.io/github/stars/dogtagpki/pki?style=social&color=white)](https://github.com/dogtagpki/pki/stargazers)  
+  **Enterprise-class Certificate Authority**, GPL-2.0 licensed. **510 GitHub stars** — **supports all aspects of certificate lifecycle management** . Key archival, OCSP responder, and smartcard management . The upstream engine for Red Hat Certificate System . 🏛️
 
 - **[Lowkey Vault](https://github.com/nagyesta/lowkey-vault)** [![Stars](https://img.shields.io/github/stars/nagyesta/lowkey-vault?style=social&color=white)](https://github.com/nagyesta/lowkey-vault/stargazers)  
+  **Test double for Azure Key Vault**, MIT licensed. **110+ GitHub stars** — **low footprint alternative for testing and CI pipelines** . Supports cryptographic keys (RSA, EC, OCT), secrets, and certificates with Docker and Testcontainers support . 🧪
 
-  **Test double for Azure Key Vault**, MIT licensed. **Low footprint alternative for testing and CI** . **NOT for production** — **does not use security measures to keep secrets safe**  . **Supports keys (RSA, EC, OCT), secrets, and certificates** . **Docker and Testcontainers support** . **Best for local development and testing**  . 🧪
+- **[ILM (Identity Lifecycle Management)](https://github.com/OmniTrustILM/ilm)** [![Stars](https://img.shields.io/github/stars/OmniTrustILM/ilm?style=social&color=white)](https://github.com/OmniTrustILM/ilm/stargazers)  
+  **Modern platform for identity and cryptographic lifecycle management**, Apache-2.0 licensed. **Certificate management through RA Profile**, cryptographic key management via Token Profile, and Cryptographic Bill of Materials (CBOM) repository and scanner . 🏗️
 
 
 
@@ -277,31 +208,22 @@ Contributions are welcome! Follow these steps to submit new certificate and key 
 
 
 
-## 📊 Star History
+## 🤝 Support & Sponsorship 💖
 
+Thank you so much for exploring and using this curated Certificate and Key Management resource directory! Your support helps keep this ecosystem directory updated, accurate, and comprehensive for the global developer and security community. 🌟
 
+If you find this project valuable, please consider supporting it in the following ways:
 
-[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Certificate-Key-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Certificate-Key-Management&type=date&legend=top-left)
-
-
+- ⭐ **Star** this repository on GitHub to boost discoverability and help other security teams find it!
+- 🔀 **Fork & Share** with fellow security engineers, DevOps professionals, and PKI architects.
+- 📢 **Spread the Word** on social media, blogs, tech communities, and team channels.
+- ☕ **Buy Me a Coffee / Sponsor**: Support ongoing maintenance, research, and curation through the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Every contribution is deeply appreciated! ☕
 
 ---
 
+## 📊 Star History 📈
 
-
-## 🤝 Support & Sponsorship
-
-
-
-If you find this certificate and key management repository useful, please consider supporting the project:
-
-
-
-- ⭐ **Star** this repository to increase visibility!
-
-- 🔀 **Fork** and share with fellow security engineers, PKI architects, and open-source advocates.
-
-- ☕ **Sponsor & Buy Me a Coffee**: Support ongoing open-source curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Certificate-Key-Management&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Certificate-Key-Management&type=date&legend=top-left)
 
 
 
